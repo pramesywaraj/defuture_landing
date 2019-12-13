@@ -13,8 +13,8 @@
     display: flex;
 
     img {
-        width: 100px;
-        height: 100%;
+        width: 85px;
+        height: auto;
         margin-bottom: 0;
     }
 }
@@ -22,17 +22,21 @@
 .main-nav {
     display: flex;
     list-style: none;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0 0 0 2em;
     padding: 10px;
     a {
         color: $primary_purple;
         text-decoration: none;
         margin-right: 2.5em;
-        margin-bottom: 0;
+        display: block;
+
+        span {
+            vertical-align: middle;
+        }
     }
 }
 
 .float-right {
-    float: right;  
+    margin-left: auto;  
 }

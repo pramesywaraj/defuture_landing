@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Button from './parts/button'
 import headerStyle from './styling/header.module.scss'
 
 const Header = () => {
@@ -30,10 +31,17 @@ const Header = () => {
 					{
 						navElements.map(nav => (
 							<Link to={nav.link}>
-								{nav.name}
+								<span>
+									{nav.name}
+								</span>
 							</Link>
 						))
 					}
+				</div>
+				<div className={headerStyle.floatRight}>
+					<Button>
+						Hubungi Kami
+					</Button>
 				</div>
 			</div>
 		</header>

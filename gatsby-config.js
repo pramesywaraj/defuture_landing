@@ -21,10 +21,9 @@ module.exports = {
       options: {
         fonts: [
           `montserrat`,
-          `sans-serif`
-        ]
+          `sans serif\:300,400,400i,700` // you can also specify font weights and styles
+        ],
       }
     }
-    
   ],
 }
