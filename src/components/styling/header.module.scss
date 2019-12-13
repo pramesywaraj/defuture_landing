@@ -1,0 +1,38 @@
+@import './variable.scss';
+
+.header {
+    background: #68E89F;
+    margin-bottom: 2em;
+}
+
+.header-section {
+    margin: 0 auto;
+    max-width: 90vw;
+    width: 100%;
+    padding: 1.45rem;
+    display: flex;
+
+    img {
+        width: 100px;
+        height: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 1.2em;
+    margin: 0 0 0 2em;
+    padding: 10px;
+    a {
+        color: $primary_purple;
+        text-decoration: none;
+        margin-right: 2.5em;
+        margin-bottom: 0;
+    }
+}
+
+.float-right {
+    float: right;  
+}
