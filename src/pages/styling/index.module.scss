@@ -1,0 +1,19 @@
+@import '../../components/styling/variable.scss';
+
+.cover {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    background-color: $primary_tosca;
+    background-image: url('../../assets/character_1.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-attachment: fixed;
+    background-position: center bottom; 
+}
+
+.cover h1 {
+    position: relative;
+    margin: auto;
+    top: 20vh;
+}

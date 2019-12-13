@@ -4,12 +4,15 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import indexStyle from './styling/index.module.scss'
+
 const IndexPage = () => (
 	<Layout>
 		<SEO title="Home" />
-		<h1>Hi people</h1>
-		<p>Welcome to your new Gatsby site.</p>
-		<p>Now go build something great.</p>
+		<div className={indexStyle.cover}>
+			<h1>Genggam Dunia Digital Bersama Kami!</h1>
+			{/* <img className={indexStyle.centeredImage} src={require('../assets/character_1.svg')} alt="Defuture Mascot"/> */}
+		</div>
 	</Layout>
 )
 

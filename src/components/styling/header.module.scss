@@ -2,7 +2,6 @@
 
 .header {
     background: #68E89F;
-    margin-bottom: 2em;
 }
 
 .header-section {
@@ -12,7 +11,8 @@
     padding: 1.45rem;
     display: flex;
 
-    img {
+    a img {
+        display: block;
         width: 85px;
         height: auto;
         margin-bottom: 0;
@@ -23,6 +23,7 @@
     display: flex;
     list-style: none;
     font-size: 1em;
+    font-weight: 800;
     margin: 0 0 0 2em;
     padding: 10px;
     a {
