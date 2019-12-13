@@ -29,7 +29,7 @@
 .title h1 {
     position: relative;
     margin: auto;
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: bold;
     width: 45%;
     top: 15vh;
@@ -39,14 +39,13 @@
     position: relative;
     margin: auto;
     top: 18vh;
-
+    font-size: 1.2rem;
 }
 
 // About Section
 
 .about {
     position: relative;
-    text-align: center;
     height: 100vh;
     background-color: $semi_white_bg;
 
@@ -56,8 +55,21 @@
         top: 0;
         right: 0;
     }
+}
 
+.about-title {
+    padding: 3rem;
     h1 {
+        color: $primary_purple;
+        font-size: 3rem;
         margin: 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    font {
+        color: $secondary_purple;
     }
 }

@@ -17,8 +17,9 @@ const IndexPage = () => (
 			{/* <img className={indexStyle.centeredImage} src={require('../assets/character_1.svg')} alt="Defuture Mascot"/> */}
 		</section>
 		<section className={indexStyle.about}>
-			<div>
+			<div className={indexStyle.aboutTitle}>
 				<h1>Defuture Hadir!</h1>
+				<p>Kami hadir dengan pelayanan terbaik kami, dan <font>mengapa harus kami ?</font></p>
 			</div>
 		</section>
 	</Layout>
