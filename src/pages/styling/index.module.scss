@@ -1,5 +1,6 @@
 @import '../../components/styling/variable.scss';
 
+// Cover section
 .cover {
     position: relative;
     text-align: center;
@@ -7,13 +8,56 @@
     background-color: $primary_tosca;
     background-image: url('../../assets/character_1.svg');
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 37%;
     background-attachment: fixed;
     background-position: center bottom; 
 }
 
-.cover h1 {
+
+.title {
+    color: $primary_purple;
+
+    font {
+        color: $secondary_purple;
+    }
+
+    p {
+        color: $secondary_purple;
+    }
+}
+
+.title h1 {
     position: relative;
     margin: auto;
-    top: 20vh;
+    font-size: 40px;
+    font-weight: bold;
+    width: 45%;
+    top: 15vh;
+}
+
+.title p {
+    position: relative;
+    margin: auto;
+    top: 18vh;
+
+}
+
+// About Section
+
+.about {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    background-color: $semi_white_bg;
+
+    &:before {
+        content: url("../../assets/shape_1.svg");
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    h1 {
+        margin: 0;
+    }
 }
