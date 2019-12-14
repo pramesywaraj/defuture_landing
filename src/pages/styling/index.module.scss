@@ -46,7 +46,7 @@
 
 .about {
     position: relative;
-    height: 100vh;
+    // height: 100vh;
     background-color: $semi_white_bg;
 
     &:before {
@@ -84,15 +84,20 @@
 
 .about-box {
     text-align: center;
-    margin-top: 10vh;
+    margin: 10vh 0 20vh 0;
+
+    .highlighted {
+        color: $primary_purple;
+        font-weight: bold;
+    }
 
     .card {
         margin: 10%;
-        height: 10vh;
+        height: 250px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         padding: 20px;
         box-shadow: 0px 8px 15px #00000029;
         transition: 0.3s;
-        border-radius: 5px;
+        border-radius: 30px;
     }
 }
