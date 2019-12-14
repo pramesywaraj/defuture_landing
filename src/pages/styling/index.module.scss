@@ -58,7 +58,7 @@
 }
 
 .about-title {
-    padding: 3rem;
+    padding: 3rem 3rem 0 3rem;
     h1 {
         color: $primary_purple;
         font-size: 3rem;
@@ -71,5 +71,28 @@
 
     font {
         color: $secondary_purple;
+    }
+}
+
+.about-container {
+    display: grid;
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 80vw;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+}
+
+.about-box {
+    text-align: center;
+    margin-top: 10vh;
+
+    .card {
+        margin: 10%;
+        height: 10vh;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        padding: 20px;
+        box-shadow: 0px 8px 15px #00000029;
+        transition: 0.3s;
+        border-radius: 5px;
     }
 }

@@ -60,6 +60,18 @@ function SEO({ description, lang, meta, title }) {
 					name: `twitter:description`,
 					content: metaDescription,
 				},
+				{
+					name: `viewport`,
+					content: 'width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no',
+				},
+				{
+					httpEquiv: "X-UA-Compatible",
+					content: "IE=edge,chrome=1"
+				},
+				{
+					name: "HandheldFriendly",
+					content: true
+				}
 			].concat(meta)}
 		/>
 	)
