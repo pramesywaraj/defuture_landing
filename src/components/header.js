@@ -7,8 +7,8 @@ import headerStyle from './styling/header.module.scss'
 
 const Header = () => {
 	const navElements = [
-		{ link: "#about", name: "Tentang" },
-		{ link: "#services", name: "Layanan" },
+		{ link: "#about", name: "About" },
+		{ link: "#services", name: "Services" },
 		{ link: "#portfolio", name: "Portfolio" },
 		{ link: "#client", name: "Client" },
 	]
@@ -40,7 +40,7 @@ const Header = () => {
 				</div>
 				<div className={headerStyle.floatRight}>
 					<Button>
-						Hubungi Kami
+						Contact us
 					</Button>
 				</div>
 			</div>

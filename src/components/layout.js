@@ -18,9 +18,12 @@ const Layout = ({ children }) => {
 
 	return (
 		<>
+			{/* header */}
 			<Header />
 			<div>
+			{/* main */}
 				<main>{children}</main>
+			{/* footer */}
 				<footer>
 					© {new Date().getFullYear()}, Built with
           			{` `}
