@@ -153,7 +153,7 @@ const IndexPage = () => (
 				<p>
 				Mitra Gading Villa, Jl. Kelapa Hibrida <br></br>
 				Blok G1 No.03 RT : 005 / RW : 017 
-				<br></br>Kelapa Gading, North Jakarta 14130
+				<br></br>Kelapa Gading, North Jakarta 14250
 				<br></br>T : +62 21 24523331
 				</p>
 			</div>
