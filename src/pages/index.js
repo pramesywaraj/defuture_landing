@@ -12,37 +12,37 @@ const IndexPage = () => (
 		{/* Tagline */}
 		<section className={indexStyle.cover}>
 			<div className={indexStyle.title}>
-				<h1>Genggam Dunia Digital Bersama <font>Kami !</font></h1>
-				<p>Solusi untuk mengembangkan bisnis Anda</p>
+				<h1>Take the world with <font>Us !</font></h1>
+				<p>We can magic your business through technology</p>
 			</div>
 		</section>
 		{/* About */}
 		<section className={indexStyle.about}>
 			<div className={indexStyle.aboutTitle}>
-				<h1>Defuture Hadir!</h1>
-				<p>Kami hadir dengan pelayanan terbaik kami, dan <font>mengapa harus kami ?</font></p>
+				<h1>Defuture is coming!</h1>
+				<p>We come with our best services, and <font><b>why should us ?</b></font></p>
 			</div>
 			<div className={indexStyle.aboutContainer}>
 				<div className={indexStyle.aboutBox}>
 					<div className={indexStyle.card}>
 						<img className={indexStyle.cardImg} src={require('../assets/Layer2-1.png')}/>
 					</div>
-					<p className={indexStyle.highlighted}>Kami selalu memberikan saran!</p>
-					<p>Kami tidak ingin pelanggan kami memiliki kendala pada saat ingin mewujudkan ide hebatnya.</p>
+					<p className={indexStyle.highlighted}>Solutive</p>
+					<p>We want our customers to realize their business through technology.</p>
 				</div>
 				<div className={indexStyle.aboutBox}>
 					<div className={indexStyle.card}>
 						<img className={indexStyle.cardImg} src={require('../assets/Layer2-2.png')}/>
 					</div>
-					<p className={indexStyle.highlighted}>Oh tidak, ada perubahan?!</p>
-					<p>Tenang, kami siap dengan segala perubahan apabila tidak sesuai dan langsung mengerjakannya.</p>
+					<p className={indexStyle.highlighted}>Responsive</p>
+					<p>We are ready with customization from our customers.</p>
 				</div>
 				<div className={indexStyle.aboutBox}>
 					<div className={indexStyle.card}>
 						<img className={indexStyle.cardImg} src={require('../assets/Layer2.png')}/>
 					</div>
-					<p className={indexStyle.highlighted}>Para Client percaya dengan kami.</p>
-					<p>Kami telah membantu Client kami dalam mewujudkan idenya bersama kami. Apakah Anda tahu? Mereka puas!</p>
+					<p className={indexStyle.highlighted}>Trusted</p>
+					<p>We have helped our clients realize their ideas with us. Do you know? They are satisfied!</p>
 				</div>
 			</div>
 			<div className={indexStyle.halfServices}></div>
@@ -63,7 +63,7 @@ const IndexPage = () => (
 							Web / App Development
 						</div>
 						<div  className={indexStyle.cardDescription}>
-							Kami dapat membantu Anda untuk membuat website atau aplikasi yang Anda inginkan.
+							We can help you to create the website or application that you want.
 						</div>
 					</div>
 					{/* AI */}
@@ -75,7 +75,7 @@ const IndexPage = () => (
 							Artificial Intelligence
 						</div>
 						<div className={indexStyle.cardDescription}>
-						Anda ingin menjalankan bisnis secara otomatis? Biarkan lah komputer mempelajarinya.
+							Do you want to run a business automatically? Let the computer learn it.
 						</div>
 					</div>
 					{/* IOT */}
@@ -87,7 +87,7 @@ const IndexPage = () => (
 							Internet of Things
 						</div>
 						<div className={indexStyle.cardDescription}>
-							Anda membutuhkan perangkat yang pintar dalam kegiatan Anda? Kami juga bisa mewujudkannya.
+							Do you need a smart device in your activities? We can also make it happen.
 						</div>
 					</div>
 					{/* SOFTWARE CONSULTATION */}
@@ -99,7 +99,7 @@ const IndexPage = () => (
 							Software Consultation
 						</div>
 						<div  className={indexStyle.cardDescription}>
-						Anda membutuhkan saran?
+							Ask your necessary with us. We can give best solution for your business.
 						</div>
 					</div>
 				</div>
@@ -120,7 +120,7 @@ const IndexPage = () => (
 				{/* picture left */}
 			<div className={indexStyle.contactus}>
 				<div className={indexStyle.contactusPicture}>
-				<p className={indexStyle.contactusTitle}>Tertarik untuk mewujudkannya bersama kami? Ayo segera hubungi kami!</p>
+				<p className={indexStyle.contactusTitle}>Interested to making it happen with us? Come on contact us immediately!</p>
 					<img height="80%" width="80%" className={indexStyle.cardImg} src={require('../assets/Group13.png')}/>
  				</div>
 				{/* form right */}

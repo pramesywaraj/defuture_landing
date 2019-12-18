@@ -197,12 +197,13 @@
 }
 .contactus {
     color:$white_font_color;
-    height: 100vh;
+    height: 120vh;
     background-color: $primary_purple;
     text-align: center;
     padding: 10px;
 }
 .contactus-title {
+    padding-left:20px;
     font-size: 2em;
     color: $white_font_color;
     text-align: left !important;
@@ -223,7 +224,8 @@
     padding:5px;
     margin: 5px 0px;
 }
-.btn {
+.btn:hover {
+    cursor: pointer;
     float: right;
     margin-right: 20%;
     margin-top:20px;
@@ -233,5 +235,18 @@
     padding:10px;
     background-color: $primary_tosca;
     color: $primary_purple;
+    border-radius: 15px;
+}
+.btn {
+    cursor: pointer;
+    float: right;
+    margin-right: 20%;
+    margin-top:20px;
+    border: 1px solid $primary_tosca;
+    font-weight: bold;
+    width: 150px;
+    padding:10px;
+    background-color: $primary_purple;
+    color: $primary_tosca;
     border-radius: 15px;
 }
