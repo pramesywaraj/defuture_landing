@@ -9,8 +9,8 @@ const Header = () => {
 	const navElements = [
 		{ link: "#about", name: "About" },
 		{ link: "#services", name: "Services" },
-		{ link: "#portfolio", name: "Portfolio" },
-		{ link: "#client", name: "Client" },
+		// { link: "#portfolio", name: "Portfolio" },
+		// { link: "#client", name: "Client" },
 	]
 
 	return (
@@ -39,7 +39,7 @@ const Header = () => {
 					}
 				</div>
 				<div className={headerStyle.floatRight}>
-					<Button>
+					<Button href="#contactus">
 						Contact us
 					</Button>
 				</div>

@@ -25,9 +25,9 @@ const Layout = ({ children }) => {
 				<main>{children}</main>
 			{/* footer */}
 				<footer>
-					© {new Date().getFullYear()}, Built with
+					© <b>{new Date().getFullYear()} Defuture Technology</b>. All right reserved.
           			{` `}
-					<a href="https://www.gatsbyjs.org">Gatsby</a>
+					{/* <a className href="https://www.gatsbyjs.org">Gatsby</a> */}
 				</footer>
 			</div>
 		</>

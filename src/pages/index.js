@@ -17,7 +17,7 @@ const IndexPage = () => (
 			</div>
 		</section>
 		{/* About */}
-		<section className={indexStyle.about}>
+		<section id="about" className={indexStyle.about}>
 			<div className={indexStyle.aboutTitle}>
 				<h1>Defuture is coming!</h1>
 				<p>We come with our best services, and <font><b>why should us ?</b></font></p>
@@ -48,7 +48,7 @@ const IndexPage = () => (
 			<div className={indexStyle.halfServices}></div>
 		</section>
 		{/* Services */}
-		<section className={indexStyle.services}>
+		<section  id="services" className={indexStyle.services}>
 			<div className={indexStyle.servicesTitle}>
 				Our Services<br></br>
 			</div>
@@ -116,7 +116,7 @@ const IndexPage = () => (
 			
 		</section> */}
 		{/* Contact us */}
-		<section>
+		<section id="contactus">
 				{/* picture left */}
 			<div className={indexStyle.contactus}>
 				<div className={indexStyle.contactusPicture}>
@@ -125,7 +125,7 @@ const IndexPage = () => (
  				</div>
 				{/* form right */}
 				<div className={indexStyle.contactusForm}>
-					<form action="/submit">
+					{/* <form action="/submit"> */}
 						<label>Your name</label><br></br>
 						<input className={indexStyle.inputField} type="text" name="your_name"></input><br></br><br></br>
 						
@@ -142,8 +142,20 @@ const IndexPage = () => (
 						<textarea className={indexStyle.inputField} col="10" type="text" name="message"></textarea><br></br>
 
 						<input className={indexStyle.btn} type="submit" value="Submit"></input>
-					</form>
+					{/* </form> */}
 				</div>
+			</div>
+		</section>
+		{/* address */}
+		<section className={indexStyle.footer}>
+			<div className={indexStyle.address}>
+				<h2>Office</h2>
+				<p>
+				Mitra Gading Villa, Jl. Kelapa Hibrida <br></br>
+				Blok G1 No.03 RT : 005 / RW : 017 
+				<br></br>Kelapa Gading, North Jakarta 14130
+				<br></br>T : +62 21 24523331
+				</p>
 			</div>
 		</section>
 	</Layout>
