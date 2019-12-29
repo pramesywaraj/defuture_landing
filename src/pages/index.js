@@ -121,7 +121,7 @@ const IndexPage = () => (
 				{/* picture left */}
 			<div className={indexStyle.contactus}>
 				<div className={indexStyle.contactusPicture}>
-				<p className={indexStyle.contactusTitle}>Interested to making it happen with us? Come on contact us immediately!</p>
+				<p className={indexStyle.contactusTitle}>Interested to make it happen with us? Come on contact us immediately!</p>
 					<img height="80%" width="80%" className={indexStyle.cardImg} src={require('../assets/Group13.png')}/>
  				</div>
 				{/* form right */}
