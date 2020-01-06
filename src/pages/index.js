@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import firebase from '../firebase';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,7 +13,7 @@ const IndexPage = () => (
 		{/* Tagline */}
 		<section className={indexStyle.cover}>
 			<div className={indexStyle.title}>
-				<h1>Take the world with <font>Us !</font></h1>
+				<h1>Take the world with <font>Us!</font></h1>
 				<p>We can magic your business through technology</p>
 			</div>
 		</section>
@@ -120,29 +121,32 @@ const IndexPage = () => (
 				{/* picture left */}
 			<div className={indexStyle.contactus}>
 				<div className={indexStyle.contactusPicture}>
-				<p className={indexStyle.contactusTitle}>Interested to making it happen with us? Come on contact us immediately!</p>
+				<p className={indexStyle.contactusTitle}>Interested to make it happen with us? Come on contact us immediately!</p>
 					<img height="80%" width="80%" className={indexStyle.cardImg} src={require('../assets/Group13.png')}/>
  				</div>
 				{/* form right */}
 				<div className={indexStyle.contactusForm}>
-					{/* <form action="/submit"> */}
+					<form onSubmit={e =>{
+						e.preventDefault()
+						submitform(e)
+					}}>
 						<label>Your name</label><br></br>
-						<input className={indexStyle.inputField} type="text" name="your_name"></input><br></br><br></br>
+						<input className={indexStyle.inputField} required type="text" name="name"></input><br></br><br></br>
 						
 						<label>Email</label><br></br>
-						<input className={indexStyle.inputField} type="email" name="email"></input><br></br><br></br>
+						<input className={indexStyle.inputField} required type="email" name="email"></input><br></br><br></br>
 
 						<label>Phone number</label><br></br>
-						<input className={indexStyle.inputField} type="number" name="phone_number"></input><br></br><br></br>
+						<input className={indexStyle.inputField} required type="number" name="phone_number"></input><br></br><br></br>
 
 						<label>Company name</label><br></br>
-						<input className={indexStyle.inputField} type="text" name="company_name"></input><br></br><br></br>
+						<input className={indexStyle.inputField} required type="text" name="company_name"></input><br></br><br></br>
 
 						<label>Enjoy to type your message</label><br></br>
-						<textarea className={indexStyle.inputField} col="10" type="text" name="message"></textarea><br></br>
+						<textarea className={indexStyle.inputFieldArea} required type="text" name="message"></textarea><br></br>
 
-						<input className={indexStyle.btn} type="submit" value="Submit"></input>
-					{/* </form> */}
+						<input className={indexStyle.btn} required type="submit" value="Submit"></input>
+					</form>
 				</div>
 			</div>
 		</section>
@@ -161,4 +165,23 @@ const IndexPage = () => (
 	</Layout>
 )
 
+function submitform(e) {
+	const date = new Date()
+	// unique_time for custom id in form_company table
+	const unique_time = date.getHours()+":"+date.getMinutes()+":"+date.getDate()+":"+date.getMonth()+":"+date.getFullYear()
+	// save data into firestore with table form_company
+	firebase.firestore().collection('form_company').doc(unique_time).set({
+		name:e.target.name.value,
+		email:e.target.email.value,
+		phone_number:e.target.phone_number.value,
+		company_name:e.target.company_name.value,
+		message:e.target.message.value,
+		created_at: unique_time
+		}).then(function() {
+		  alert("Success! Thank you for your submission. We will contact you immediately");
+		})
+		.catch(function(error) {
+			alert("Your submission is failed to upload. Please try again.");
+		});
+}
 export default IndexPage
